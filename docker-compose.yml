@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    container_name: 'ignite-tests'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres 
+      POSTGRES_PASSWORD: docker 
+      POSTGRES_DB: fin_api 
